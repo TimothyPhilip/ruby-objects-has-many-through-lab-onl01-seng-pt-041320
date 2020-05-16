@@ -16,7 +16,7 @@ class Patient
   
   def appointments
     Appointment.all.select{|info| info.patient == self}
-    binding.pry
+ #   binding.pry
   end 
   
   def new_appointment(date, doctor)
